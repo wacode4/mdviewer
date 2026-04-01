@@ -15,41 +15,19 @@ A minimal Markdown reader for macOS. Native, fast, distraction-free.
 
 ## Install
 
-### Homebrew (coming soon)
-
-```bash
-brew install --cask mdviewer
-```
-
-### Build from source
-
 Requires **macOS 14+** and **Swift 5.9+**.
 
 ```bash
-git clone https://github.com/punkwalter/mdviewer.git
+git clone https://github.com/wacode4/mdviewer.git
 cd mdviewer
-swift build -c release
-```
-
-Create the app bundle:
-
-```bash
 ./scripts/bundle.sh
 ```
 
-This creates `MDViewer.app` — drag it to `/Applications`.
+This builds and creates `MDViewer.app` — drag it to `/Applications`.
 
 ### Set as default Markdown viewer
 
 Right-click any `.md` file → Get Info → Open with → Change All → select MDViewer.
-
-Or via command line:
-
-```bash
-brew install duti
-duti -s com.walt.mdviewer net.daringfireball.markdown viewer
-duti -s com.walt.mdviewer .md all
-```
 
 ## Usage
 
